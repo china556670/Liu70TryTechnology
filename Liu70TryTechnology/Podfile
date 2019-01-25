@@ -1,0 +1,6 @@
+
+target 'Liu70TryTechnology' do
+
+pod 'MJExtension'
+
+end

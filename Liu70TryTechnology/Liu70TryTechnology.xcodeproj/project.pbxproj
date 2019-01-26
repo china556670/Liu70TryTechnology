@@ -44,6 +44,9 @@
 		5DA49A6D21FAB74B00F22D2C /* NSMutableAttributedString+Liu70FPCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA49A6021FAB74B00F22D2C /* NSMutableAttributedString+Liu70FPCategory.m */; };
 		5DA49A6E21FAB74B00F22D2C /* UIView+Liu70FPCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA49A6121FAB74B00F22D2C /* UIView+Liu70FPCategory.m */; };
 		5DA49A7221FAB76E00F22D2C /* UIScrollView+mjRefreshByLiu70.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA49A7121FAB76E00F22D2C /* UIScrollView+mjRefreshByLiu70.m */; };
+		5DBC76DE21FC26F40016D08F /* BaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DBC76DD21FC26F40016D08F /* BaseRequest.m */; };
+		5DBC76E121FC28CC0016D08F /* TestListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DBC76E021FC28CC0016D08F /* TestListRequest.m */; };
+		5DBC76E821FC3BBF0016D08F /* TestListRequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DBC76E721FC3BBF0016D08F /* TestListRequestModel.m */; };
 		DEB790B614DBEF23376DD131 /* libPods-Liu70TryTechnology.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EF59B0F25B905E972FBEA11 /* libPods-Liu70TryTechnology.a */; };
 /* End PBXBuildFile section */
 
@@ -122,6 +125,13 @@
 		5DA49A7021FAB76E00F22D2C /* UIScrollView+mjRefreshByLiu70.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+mjRefreshByLiu70.h"; sourceTree = "<group>"; };
 		5DA49A7121FAB76E00F22D2C /* UIScrollView+mjRefreshByLiu70.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+mjRefreshByLiu70.m"; sourceTree = "<group>"; };
 		5DA49A7321FAB95000F22D2C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		5DBC76DC21FC26F40016D08F /* BaseRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseRequest.h; sourceTree = "<group>"; };
+		5DBC76DD21FC26F40016D08F /* BaseRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseRequest.m; sourceTree = "<group>"; };
+		5DBC76DF21FC28CC0016D08F /* TestListRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestListRequest.h; sourceTree = "<group>"; };
+		5DBC76E021FC28CC0016D08F /* TestListRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestListRequest.m; sourceTree = "<group>"; };
+		5DBC76E221FC2C740016D08F /* RequestList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestList.h; sourceTree = "<group>"; };
+		5DBC76E621FC3BBF0016D08F /* TestListRequestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestListRequestModel.h; sourceTree = "<group>"; };
+		5DBC76E721FC3BBF0016D08F /* TestListRequestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestListRequestModel.m; sourceTree = "<group>"; };
 		842C4E9ED4E259DCC82B6BDF /* Pods-Liu70TryTechnology.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Liu70TryTechnology.release.xcconfig"; path = "Pods/Target Support Files/Pods-Liu70TryTechnology/Pods-Liu70TryTechnology.release.xcconfig"; sourceTree = "<group>"; };
 		8EF59B0F25B905E972FBEA11 /* libPods-Liu70TryTechnology.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Liu70TryTechnology.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C76545EEDB78883DC5230789 /* Pods-Liu70TryTechnology.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Liu70TryTechnology.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Liu70TryTechnology/Pods-Liu70TryTechnology.debug.xcconfig"; sourceTree = "<group>"; };
@@ -275,6 +285,7 @@
 				5DA49A3721FAB70600F22D2C /* AppDelegate.h */,
 				5DA49A3821FAB70600F22D2C /* AppDelegate.m */,
 				5DA49A7321FAB95000F22D2C /* PrefixHeader.pch */,
+				5DBC76DB21FC26A00016D08F /* Net */,
 				5DA49A4D21FAB72500F22D2C /* Tools */,
 				5DA49A7421FAB95E00F22D2C /* ViewControllers */,
 				5DA49A3D21FAB70600F22D2C /* Main.storyboard */,
@@ -340,6 +351,36 @@
 				5DA49A3B21FAB70600F22D2C /* ViewController.m */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5DBC76DB21FC26A00016D08F /* Net */ = {
+			isa = PBXGroup;
+			children = (
+				5DBC76E221FC2C740016D08F /* RequestList.h */,
+				5DBC76E921FC3DC50016D08F /* Requests */,
+				5DBC76E521FC3BAD0016D08F /* Models */,
+			);
+			path = Net;
+			sourceTree = "<group>";
+		};
+		5DBC76E521FC3BAD0016D08F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5DBC76E621FC3BBF0016D08F /* TestListRequestModel.h */,
+				5DBC76E721FC3BBF0016D08F /* TestListRequestModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5DBC76E921FC3DC50016D08F /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				5DBC76DC21FC26F40016D08F /* BaseRequest.h */,
+				5DBC76DD21FC26F40016D08F /* BaseRequest.m */,
+				5DBC76DF21FC28CC0016D08F /* TestListRequest.h */,
+				5DBC76E021FC28CC0016D08F /* TestListRequest.m */,
+			);
+			path = Requests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -441,6 +482,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D6E916121FABEBD007034BF /* NSBundle+MJRefresh.m in Sources */,
+				5DBC76E821FC3BBF0016D08F /* TestListRequestModel.m in Sources */,
 				5D6E916E21FABEBD007034BF /* MJRefreshBackFooter.m in Sources */,
 				5DA49A7221FAB76E00F22D2C /* UIScrollView+mjRefreshByLiu70.m in Sources */,
 				5D6E916521FABEBD007034BF /* MJRefreshBackNormalFooter.m in Sources */,
@@ -450,6 +492,7 @@
 				5D6E916721FABEBD007034BF /* MJRefreshAutoGifFooter.m in Sources */,
 				5D6E916621FABEBD007034BF /* MJRefreshAutoStateFooter.m in Sources */,
 				5DA49A6C21FAB74B00F22D2C /* UIImageView+Liu70FPCategory.m in Sources */,
+				5DBC76DE21FC26F40016D08F /* BaseRequest.m in Sources */,
 				5DA49A6821FAB74B00F22D2C /* UITableView+Liu70FPCategory.m in Sources */,
 				5DA49A6D21FAB74B00F22D2C /* NSMutableAttributedString+Liu70FPCategory.m in Sources */,
 				5DA49A3C21FAB70600F22D2C /* ViewController.m in Sources */,
@@ -472,6 +515,7 @@
 				5DA49A6421FAB74B00F22D2C /* UIButton+Liu70FPCategory.m in Sources */,
 				5D6E916F21FABEBD007034BF /* MJRefreshAutoFooter.m in Sources */,
 				5D6E916421FABEBD007034BF /* MJRefreshBackStateFooter.m in Sources */,
+				5DBC76E121FC28CC0016D08F /* TestListRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

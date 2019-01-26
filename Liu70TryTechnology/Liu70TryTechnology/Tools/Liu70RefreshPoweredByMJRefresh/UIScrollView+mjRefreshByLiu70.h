@@ -16,11 +16,11 @@
 
 @interface UIScrollView (mjRefreshByLiu70)
 
-@property (nonatomic, strong) NSMutableArray* refreshDataArray;
-@property (nonatomic, assign) NSInteger refreshPage;
+@property (nonatomic, strong) NSMutableArray* refreshDataArray; //自动数据源
+@property (nonatomic, assign) NSInteger refreshPage; //自动页码
 
-@property (nonatomic, assign) NSInteger refreshFirstPage;
-@property (nonatomic, assign) NSInteger refreshPageCount;
+@property (nonatomic, assign) NSInteger refreshFirstPage; //设置从哪一页开始加载 默认1
+@property (nonatomic, assign) NSInteger refreshPageCount; //一页几条 默认5
 
 @property (nonatomic, weak) id<UIScrollViewRefreshDelegate> refreshDelegate;
 

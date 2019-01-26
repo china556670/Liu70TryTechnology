@@ -2,5 +2,7 @@
 target 'Liu70TryTechnology' do
 
 pod 'MJExtension'
+pod 'AFNetworking'
+pod 'Masonry'
 
 end
